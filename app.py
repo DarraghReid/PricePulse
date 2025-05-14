@@ -25,8 +25,13 @@ def optimize_prices():
     # Simple price optimization: apply a 10% discount
     optimized_prices = []
     for _, row in data.iterrows():
-        new_price = row['price'] * 0.9  # Basic price optimization logic
-        optimized_prices.append({'product': row['product'], 'newPrice': new_price})
+        original_price = row['price']  # Assuming 'price' column exists in the CSV
+        new_price = original_price * 0.9  # 10% discount for example
+        optimized_prices.append({
+            'product': row['product'],
+            'price': original_price,  # Sending the original price
+            'newPrice': new_price  # Sending the optimized price
+        })
 
     return jsonify({'optimizedPrices': optimized_prices})
 

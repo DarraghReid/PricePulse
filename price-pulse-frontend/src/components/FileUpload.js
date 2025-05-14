@@ -52,9 +52,6 @@ function FileUpload({ setOptimizedPrices }) {
             <button onClick={onFileUpload}>Upload and Optimize Prices</button>
             </div>
         )}
-      {/* <h2>Upload Retail Data</h2>
-      <input type="file" onChange={onFileChange} />
-      <button onClick={onFileUpload}>Upload and Optimize Prices</button> */}
     </div>
   );
 }
