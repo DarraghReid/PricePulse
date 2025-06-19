@@ -1,5 +1,5 @@
 import React from 'react';
-import Plot from 'react-plotly.js';
+import Plot from 'react-plotly.js'; 
 import { useTable } from 'react-table';
 
 const PriceOptimization = ({ optimizedPrices }) => {
